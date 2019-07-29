@@ -1,0 +1,233 @@
+{
+    "workspace": "D:\\GIS\\Zambia\\ProjectAreas\\Mpepho Wind\\Buffering2",
+    "temp_workspace": "C:\\Temp",
+    "input_folder": "Inputs",
+    "output_folder": "Outputs",
+    "start_area": "area_one",
+    "coordinate_system": 32736,
+    "features": [
+        {
+            "no_preprocess": true,
+            "name": "Steep Slopes",
+            "ref": "steep_slopes",
+            "input": "Construction - Steep Slopes.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "Slopes greater than ??.",
+            "type": "Construction",
+            "buffer_meters": 0,
+            "notes": "Boundary without additional buffer."
+        },
+
+        {
+            "no_preprocess": true,
+            "name": "Drainage Lines",
+            "ref": "drainage_lines",
+            "input": "Ecology - Drainage Lines.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "Drainage lines",
+            "type": "Ecology",
+            "buffer_meters": 0,
+            "notes": "Input is already buffered."
+        },       
+        
+        {
+            "no_preprocess": true,
+            "ignore": true,
+            "name": "Rivers",
+            "ref": "rivers",
+            "input": "",
+            "input_type": "",
+            "feature_type": "",
+            "description": "",
+            "type": "Ecology",
+            "buffer_meters": 100,
+            "notes": "Mtetezi River. No KMZ??"  
+        }, 
+        {
+            "no_preprocess": true,
+
+            "name": "Water Course Deliniations",
+            "ref": "water_course_deliniations",
+            "input": "Ecology - Water_Course_Delineations.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Ecology",
+            "buffer_meters": 32,
+            "notes": ""      
+        },
+        {
+            "no_preprocess": true,   
+        
+            "name": "Intermediate Impact Habitat Areas",
+            "ref": "intermediate_impact_habitat_areas",
+            "input": "Ecology - Intermediate Impact Habitat Area.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Ecology",
+            "buffer_meters": 0,
+            "notes": ""      
+        },
+        {
+            "no_preprocess": true,
+            
+            "name": "High Impact Habitat Areas",
+            "ref": "high_impact_habitat_areas",
+            "input": "Ecology - Moderately High Impact Habitat Area.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Ecology",
+            "buffer_meters": 300,
+            "notes": ""      
+        },
+        {
+            "no_preprocess": true,
+            "name": "Heritage Areas",
+            "ref": "heritage_areas",
+            "input": "Heritage - Heritage Areas.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Heritage",
+            "buffer_meters": 500,
+            "notes": ""      
+        },     
+        {
+            "no_preprocess": true,
+            "name": "Heritage Sites",
+            "ref": "heritage_sites",
+            "input": "Heritage - Heritage Sites.kmz",
+            "input_type": "kmz",
+            "feature_type": "Points",
+            "description": "",
+            "type": "Heritage",
+            "buffer_meters": 500,
+            "notes": ""      
+        },     
+        {
+            "no_preprocess": true,
+            "name": "Project Boundary",
+            "ref": "project_boundary",
+            "input": "InfrastructureProjectArea.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "description": "",
+            "type": "Infrastructure",
+            "buffer_meters": 338,
+            "notes": "1.5 Tip Height (225m*1.5)"      
+        } ,     
+        {
+            "no_preprocess": true,
+            "name": "Roads",
+            "ref": "roads",
+            "input": "Infrastructure - Roads.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polylines",
+            "description": "",
+            "type": "Infrastructure",
+            "buffer_meters": 338,
+            "notes": "1.5 Tip Height (225m*1.5)"      
+        },
+        {
+            "ignore": true,
+            "name": "National Roads",
+            "ref": "roads_national",
+            "input": "",
+            "input_type": "",
+            "feature_type": "",
+            "description": "",
+            "type": "Infrastructure",
+            "buffer_meters": 500,
+            "notes": "No KMZ??"  
+        },
+        {
+            "ignore": true,
+            "name": "Distribution Lines",
+            "ref": "tlines_distribution",
+            "input": "",
+            "input_type": "",
+            "feature_type": "",
+            "description": "",
+            "type": "Infrastructure",
+            "buffer_meters": 150,
+            "notes": "Typically 1 x tip height. No KMZ?"  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Noise Sensitive Areas",
+            "ref": "noise_sensitive_areas",
+            "input": "Noise - Noise_Sensitive_Areas.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Noise",
+            "buffer_meters": 500,
+            "notes": ""  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Forest Reserve",
+            "ref": "forest_reserve",
+            "input": "Protected Area - Forest Reserve.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Protected Areas",
+            "buffer_meters": 300,
+            "notes": "Will be turbine specific so likely to be 337,5"  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Human Habitation",
+            "ref": "human_habitation",
+            "input": "Social - Human Habitation.kmz",
+            "input_type": "kmz",
+            "feature_type": "Points",
+            "description": "",
+            "type": "Social",
+            "buffer_meters": 500,
+            "notes": ""  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Military Land",
+            "ref": "military_land",
+            "input": "Social - Military_Land.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Social",
+            "buffer_meters": 0,
+            "notes": ""  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Hill Crest",
+            "ref": "hill_crest",
+            "input": "Visual - Hill Crest.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Visual",
+            "buffer_meters": 0,
+            "notes": ""  
+        },
+        {
+            "no_preprocess": true,
+            "name": "Roads",
+            "ref": "visual_roads",
+            "input": "Visual - Main Road Exclusion.kml",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "description": "",
+            "type": "Visual",
+            "buffer_meters": 0,
+            "notes": ""  
+        }
+
+    ]
+}
