@@ -1,0 +1,53 @@
+{
+    "workspace": "D:\\GIS\\Zambia\\ProjectAreas\\Mpepho Wind\\Buffering",
+    "input_folder": "Inputs",
+    "output_folder": "Outputs",
+    "start_area": "area_one",
+    "coordinate_system": 32736,
+    "features": [
+        {
+            "name": "Trunk Roads",
+            "ref": "roads_trunk",
+            "description": "National trunk roads.",
+            "buffer_meters": 300,
+            "buffer_description": "300 to 500m."
+        },
+        {
+            "name": "Other Roads",
+            "ref": "roads_other",
+            "description": "Secondary, district and other roads and tracks.",
+            "buffer_meters": 340,
+            "buffer_description": "1.5x Tip Height from road edge."
+        },        
+        {
+            "name": "Distribution Lines",
+            "ref": "powerline_distribution",
+            "description": "Powerlines less than 220kV.",
+            "buffer_meters": 225,
+            "buffer_description": "1x Tip Height from Servitude of line (including vacant servitude)."
+        },        
+        {
+            "name": "Building Points",
+            "ref": "BUILDING_POINT",
+            "description": "Buildings and structures represented as points.",
+            "buffer_meters": 500,
+            "buffer_description": "500 to 800m.",
+            "ignore": true
+        },
+        {
+            "name": "Building Area",
+            "ref": "urban_areas",
+            "description": "Builtup areas.",
+            "buffer_meters": 500,
+            "buffer_description": "500 to 800m."
+        },      
+        {
+            "name": "Water Areas",
+            "ref": "WATER_AREA",
+            "description": "Dams, lakes and reservoirs.",
+            "buffer_meters": 50,
+            "buffer_description": "25 to 50m.",
+            "ignore": true
+        }        
+    ]
+}
