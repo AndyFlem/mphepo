@@ -1,0 +1,190 @@
+{
+    "workspace": "D:\\GIS\\Zambia\\ProjectAreas\\Mpepho Wind\\Buffering4_Nov19",
+    "temp_workspace": "C:\\Temp",
+    "input_folder": "Inputs",
+    "output_folder": "Outputs",
+    "start_area": "area_one",
+    "coordinate_system": 32736,
+    "features": [
+        {
+            "no_preprocess":true,
+            "name": "Steep Slopes",
+            "ref": "steep_slopes",
+            "input": "slope_gt16pt5deg.shp",
+            "input_type": "shp",
+            "feature_type": "Polygons",
+            "type": "Construction",
+            "buffer_meters": 0,
+            "notes": "Slopes greater than 16.5deg."
+        },
+
+        {
+            "no_preprocess":true,
+            "name": "Major Drainage Lines",
+            "ref": "major_drainage_lines",
+            "input": "drainage_major.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "type": "Ecology",
+            "buffer_meters": 100,
+            "notes": "Mtetezi River"
+        },       
+        
+        {
+            "no_preprocess":true,
+            "name": "Riverine",
+            "ref": "riverine",
+            "input": "Ecology - Water_Course_Delineations.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "type": "Ecology",
+            "buffer_meters": 32,
+            "notes": "Water courses, dambo"  
+        }, 
+        {
+            "no_preprocess":true,
+            "name": "Water",
+            "ref": "water",
+            "input": "dams.shp",
+            "input_type": "shp",
+            "feature_type": "Polygons",
+            "type": "Ecology",
+            "buffer_meters": 32,
+            "notes": "Dams, reservoirs"     
+        },
+
+        {
+            "no_preprocess":true,
+            "name": "High Impact Habitat Areas",
+            "ref": "high_impact_habitat",
+            "input": "Ecology - Moderately High Impact Habitat Area.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "type": "Ecology",
+            "buffer_meters": 32,
+            "notes": ""      
+        },
+        {
+            "no_preprocess":true,
+            "name": "Heritage Areas",
+            "ref": "heritage_areas",
+            "input": "Heritage - Heritage Areas.kmz",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "type": "Heritage",
+            "buffer_meters": 338,
+            "notes": ""      
+        },     
+        {
+            "no_preprocess":true,
+            "name": "Heritage Sites",
+            "ref": "heritage_sites",
+            "input": "Heritage - Heritage Sites.kmz",
+            "input_type": "kmz",
+            "feature_type": "Points",
+            "type": "Heritage",
+            "buffer_meters": 338,
+            "notes": ""      
+        },     
+        {
+            
+            "name": "Project Boundary",
+            "ref": "project_boundary",
+            "input": "InfrastructureProjectArea.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "type": "Infrastructure",
+            "buffer_meters": 100,
+            "notes": "100m"      
+        } ,     
+        {
+            "no_preprocess":true,
+            "name": "Roads",
+            "ref": "roads",
+            "input": "roads_local.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "type": "Infrastructure",
+            "buffer_meters": 200,
+            "notes": "200m"      
+        },
+        {
+            "no_preprocess":true,
+            "name": "National Roads",
+            "ref": "roads_national",
+            "input": "trunk_road.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "type": "Infrastructure",
+            "buffer_meters": 500,
+            "notes": "No KMZ??"  
+        },
+        {
+            "no_preprocess":true,
+            "name": "Distribution Lines",
+            "ref": "tlines_distribution",
+            "input": "distribution_lines.shp",
+            "input_type": "shp",
+            "feature_type": "Polylines",
+            "type": "Infrastructure",
+            "buffer_meters": 150,
+            "notes": "Typically 1 x tip height."  
+        },
+        {
+            "no_preprocess":true,
+            "name": "Forest Reserve",
+            "ref": "forest_reserve",
+            "input": "forest_reserves.shp",
+            "input_type": "shp",
+            "feature_type": "Polygons",
+            "type": "Protected Areas",
+            "buffer_meters": 300,
+            "notes": "Will be turbine specific so likely to be 337,5"  
+        },
+        {
+            "no_preprocess":true,
+            "name": "Human Habitation Points",
+            "ref": "habitation_point",
+            "input": "Social - Human Habitation.kmz",
+            "input_type": "kmz",
+            "feature_type": "Points",
+            "type": "Social",
+            "buffer_meters": 500,
+            "notes": ""  
+        },
+        {
+            "no_preprocess":true,
+            "name": "Human Habitation Areas",
+            "ref": "habitation_areas",
+            "input": "urban_areas.shp",
+            "input_type": "shp",
+            "feature_type": "Polygons",
+            "type": "Social",
+            "buffer_meters": 500,
+            "notes": ""  
+        },        
+        {
+            "no_preprocess":true,
+            "name": "Hill Crest",
+            "ref": "hill_crest",
+            "input": "hillcrests.shp",
+            "input_type": "shp",
+            "feature_type": "Polygons",
+            "type": "Visual",
+            "buffer_meters": 0,
+            "notes": ""  
+        },
+        {
+            "no_preprocess":true,
+            "name": "Visual Roads",
+            "ref": "visual_roads",
+            "input": "Visual - Main Road Exclusion.kml",
+            "input_type": "kmz",
+            "feature_type": "Polygons",
+            "type": "Visual",
+            "buffer_meters": 0,
+            "notes": ""  
+        }
+
+    ]
+}
